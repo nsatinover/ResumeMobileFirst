@@ -45,18 +45,17 @@
  
  main {
     grid-area: main;
-    background-color: lightslategray;
+    background-color: rgb(139, 190, 238);
  }
  
  aside {
     grid-area: aside;
-    background-color: rgb(83, 86, 104);
+    background-color: rgb(89, 170, 245);
  }
  
  footer {
     grid-area: footer;
-    background-color: rgb(32, 34, 61);
-    color: white;
+    background-color: rgb(237, 246, 253);
  }
 
  a {
@@ -99,6 +98,7 @@ img {
 
 .block {
    display: block;
+   padding-bottom: 5px;
 }
 
  /* ---- Header ---- */
