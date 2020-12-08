@@ -35,6 +35,7 @@
  header {
     grid-area: header;
     background-color: rgb(237, 246, 253);
+    text-align: center;
  }
 
  nav {
