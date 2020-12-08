@@ -1,0 +1,140 @@
+:root {
+   --link-color: powderblue;
+   --skill-color: rgb(105, 215, 230);
+}
+
+/* ===================================== 
+   Grid Layout
+======================================== */
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr);
+    /* grid-template-rows: minmax(150px, auto) min-content minmax(200px, 1fr) 100px;  */
+    /* grid-auto-rows: minmax(150px, auto); */
+    grid-auto-rows: min-content;
+    gap: 5px;
+    grid-template-areas: 
+       "header" 
+       "nav" 
+       "main"
+       "aside"
+       "footer";
+   font-size: .8em;
+ }
+
+ header,
+ nav,
+ main,
+ aside,
+ footer {
+   padding: 1em;
+ }
+
+ header {
+    grid-area: header;
+    background-color: rgb(237, 246, 253);
+ }
+
+ nav {
+   grid-area: nav;
+   background-color: rgb(179, 211, 240); 
+}
+ 
+ main {
+    grid-area: main;
+    background-color: lightslategray;
+ }
+ 
+ aside {
+    grid-area: aside;
+    background-color: rgb(83, 86, 104);
+ }
+ 
+ footer {
+    grid-area: footer;
+    background-color: rgb(32, 34, 61);
+    color: white;
+ }
+
+ a {
+   text-decoration: none;
+}
+
+a:hover {
+   filter: brightness(50%);
+}
+
+ .flex {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.flex-row {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.skill ul {
+   padding: 0 10px;
+}
+.skills li {
+   border-radius: 5px;
+	background-color:var(--skill-color);
+	margin: 5px;
+   padding: 10px;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+img {
+   width: 50px;
+   height: 50px;
+}
+
+.block {
+   display: block;
+}
+
+ /* ---- Header ---- */
+
+ #headshot {
+    border-radius: 50%;
+ }
+
+
+/* ---- Navigation ---- */
+
+.main-nav {
+   list-style-type: none;  
+}
+
+.menu {
+   display: table;
+   width: 100%;
+}
+
+.main-nav li {
+	border-radius: 5px;
+	background-color:var(--link-color);
+	margin: 5px;
+   padding: 10px;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+/* ---- Main ---- */
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+	/* border: solid 2px grey; */
+	display: table-cell;
+   display: block;
+   text-align: center;
+}
+
+
