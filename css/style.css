@@ -1,6 +1,8 @@
 :root {
    --link-color: powderblue;
    --skill-color: rgb(105, 215, 230);
+   display: flex;
+   justify-content: center;
 }
 
 /* ===================================== 
@@ -10,7 +12,7 @@
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: minmax(300px, 1fr);
+    grid-template-columns: minmax(300px, 400px);
     /* grid-template-rows: minmax(150px, auto) min-content minmax(200px, 1fr) 100px;  */
     /* grid-auto-rows: minmax(150px, auto); */
     grid-auto-rows: min-content;
@@ -133,9 +135,18 @@ img {
 	padding-right: 1em;
 	padding-left: 1em;
 	/* border: solid 2px grey; */
-	display: table-cell;
+	/* display: table-cell; */
    display: block;
    text-align: center;
+   width: 100%;
+}
+
+.h2Div {
+   display: inline-block;
+   width: 100%;
+   background-color: wheat;
+   border-radius: 5px;
+   margin: 1em 0;
 }
 
 
