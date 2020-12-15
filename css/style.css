@@ -12,7 +12,7 @@
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: minmax(300px, 400px);
+    grid-template-columns: minmax(300px, 575px);
     /* grid-template-rows: minmax(150px, auto) min-content minmax(200px, 1fr) 100px;  */
     /* grid-auto-rows: minmax(150px, auto); */
     grid-auto-rows: min-content;
@@ -128,6 +128,10 @@ img {
    padding: 10px;
    text-align: center;
    text-transform: uppercase;
+}
+
+a:hover {
+   font-size: 1.02em;
 }
 
 /* ---- Main ---- */
